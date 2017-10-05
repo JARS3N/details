@@ -1,7 +1,7 @@
 parse_<-function(doc){
 d<-xmlTreeParse(doc,useInternalNodes =T)
-if(check(d)){return("FAILURE")}
-barcode<-getBarcode(_barcoded)
+if(check_failure(d)){return("FAILURE")}
+barcode<-get_barcode(d)
 tbl<-find_table(d)
 html_tree<-XML::htmlTreeParse(tbl,useInternalNodes = T)
 tds<-xpathApply(html_tree, path = "//td")
