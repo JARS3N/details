@@ -1,4 +1,4 @@
-parse_<-function(doc){
+parse<-function(doc){
 d<-xmlTreeParse(doc,useInternalNodes =T)
 if(check_failure(d)){return("FAILURE")}
 barcode<-get_barcode(d)
