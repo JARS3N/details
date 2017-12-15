@@ -1,5 +1,5 @@
 check_nightly <- function(u) {
-  ignore_msg1 <- cat("nothing to see her,move along. ")
+  ignore_msg1 <- cat("nothing to see here,move along! ")
   ignore_msg2 <- message(Sys.time())
   # check if anything to add
   if (is.null(u)) {
