@@ -1,4 +1,4 @@
-check_db<-function(u){
+check_presence<-function(u){
   conn<- adminKraken::con_mysql()
   qry_str<-paste0('select DISTINCT(sn) from mvdata where Lot="',u,'";')
   qry<-dbSendQuery(conn,qry_str)
