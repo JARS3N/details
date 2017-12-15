@@ -8,10 +8,11 @@ Maintainer: Who to complain to <JARS3N@GMAIL.COM>
 Description: parse mv details.xmls files
 URL: https://github.com/JARS3N/details
 Imports:
-  XML,
+  	XML,
 	methods,
 	RMySQL,
 	digest,
-	parallel
+	parallel,
+	data.table
 License: none
 LazyData: TRUE
