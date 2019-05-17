@@ -20,10 +20,10 @@ check_nightly <- function(u) {
     big_end <- Sys.time()
     big_delta <- big_end - big_start
     print(big_delta)
-    suppressPackageStartupMessages(library(data.table))
+    #suppressPackageStartupMessages(library(data.table))
     
-    OUT <- data.table::rbindlist(BIG)
+    #OUT <- data.table::rbindlist(BIG)
     
-    details::write(as.data.frame(OUT))
+    #details::write(as.data.frame(OUT))
   }
 }
