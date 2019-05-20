@@ -4,7 +4,8 @@ parse_directory<-function(DIR=choose.dir()){
   size.of.list <- length(FLS);
   cl <- makeCluster( min(size.of.list, detectCores()) );
   work<-parallel::parLapply(cl=cl,FLS,parse)
-  Out<-do.call('rbind',work[!grepl("FAILURE",work)])
+ # Out<-do.call('rbind',work[!grepl("FAILURE",work)])
+  Out<-dplyr::bind_rows(work[!grepl("FAILURE",work)])
   stopCluster(cl);
-  Out
+  as.data.frame(Out)
 }
