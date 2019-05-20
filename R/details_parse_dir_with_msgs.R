@@ -6,6 +6,10 @@ parse_dir_with_msgs<-function(x,y){
   cat("=================================================\n")
   cat("directory completed in ",delta_t," for Lot: ")
   message(y)
+  if (nrow(df)<1){
+  message("nothing to write home about")
+    }else{
   details::write(df)
+    }
   cat("\n")
 }
