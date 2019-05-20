@@ -7,6 +7,6 @@ parse_dir_with_msgs<-function(x,y){
   cat("=================================================\n")
   cat("directory completed in ",delta_t," for Lot: ")
   message(y)
-  cat("\n")
   details::write(df)
+  cat("\n")
 }
