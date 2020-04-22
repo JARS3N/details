@@ -1,3 +1,9 @@
-alt_try_null<-function(u){
-  tryCatch(detalis::alt_parse(u),error=function(e){NULL},finally=message(u))
+alt_try_null <- function(u) {
+  tryCatch(
+    details::alt_parse(u),
+    error = function(e) {
+      NULL
+    },
+    finally = message(u)
+  )
 }
