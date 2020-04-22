@@ -1,4 +1,4 @@
-alt_try_null <- function(u) {
+try_null <- function(u) {
   tryCatch(
     details::alt_parse(u),
     error = function(e) {
